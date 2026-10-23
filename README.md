@@ -8,6 +8,28 @@ Image Duplicate Detector is designed to assist researchers in identifying potent
 
 The project aims to provide an accessible image-screening utility to support research transparency, scientific integrity, and reliable figure preparation.
 
+## Application Screenshots
+
+### Main Interface
+
+![Image Duplicate Detector Main Interface](screenshot-main-interface.png)
+
+The main workspace provides three inspection modes:
+- Batch image duplication screening
+- PDF and Word document image inspection
+- Side-by-side image comparison
+
+### Inspection History
+
+![Inspection History](screenshot-inspection-history.png)
+
+Review previous inspection tasks and maintain traceable screening records.
+
+### Research Image Library
+
+![Research Image Library](screenshot-research-image-library.png)
+
+Maintain a local research image library for cross-task image comparison. 
 ---
 
 ## Download
