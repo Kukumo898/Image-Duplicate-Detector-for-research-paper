@@ -1,0 +1,549 @@
+{
+  "synthetic": true,
+  "purpose": "功能演示，不是准确率、灵敏度或科研真实性验证集。",
+  "examples": [
+    {
+      "file": "01_microscopy_original.png",
+      "category": "microscopy",
+      "note": "合成显微纹理原图"
+    },
+    {
+      "file": "02_microscopy_crop_rotated.png",
+      "category": "microscopy",
+      "note": "01 的区域裁剪后旋转 90 度"
+    },
+    {
+      "file": "03_microscopy_mirrored.png",
+      "category": "microscopy",
+      "note": "01 的水平镜像"
+    },
+    {
+      "file": "04_microscopy_copy_move.png",
+      "category": "microscopy",
+      "note": "图内区域 (70,80)-(260,240) 被复制到 (415,275)"
+    },
+    {
+      "file": "05_microscopy_independent.png",
+      "category": "microscopy",
+      "note": "独立随机生成，非实验真实性阴性验证"
+    },
+    {
+      "file": "06_blot_original.png",
+      "category": "blot",
+      "note": "合成条带原图，各 lane 独立"
+    },
+    {
+      "file": "07_blot_reused_lane.png",
+      "category": "blot",
+      "note": "L2 区域完整复制到 L6，含图内重复"
+    },
+    {
+      "file": "08_blot_independent.png",
+      "category": "blot",
+      "note": "独立随机生成的条带对照"
+    },
+    {
+      "file": "09_plot_original.png",
+      "category": "plot",
+      "note": "合成统计折线图，不代表真实实验"
+    },
+    {
+      "file": "10_plot_recolored.png",
+      "category": "plot",
+      "note": "09 同一组数据，仅更改绘图颜色"
+    },
+    {
+      "file": "11_plot_independent.png",
+      "category": "plot",
+      "note": "独立合成数据柱状图；共享坐标框架不表示数据重复"
+    }
+  ],
+  "known_relationships": [
+    {
+      "a": "01_microscopy_original.png",
+      "b": "02_microscopy_crop_rotated.png",
+      "type": "crop_rotate"
+    },
+    {
+      "a": "01_microscopy_original.png",
+      "b": "03_microscopy_mirrored.png",
+      "type": "mirror"
+    },
+    {
+      "a": "04_microscopy_copy_move.png",
+      "type": "internal_copy",
+      "source_box": [
+        70,
+        80,
+        260,
+        240
+      ],
+      "destination_box": [
+        415,
+        275,
+        605,
+        435
+      ]
+    },
+    {
+      "a": "07_blot_reused_lane.png",
+      "type": "internal_copy",
+      "source_box": [
+        120,
+        65,
+        184,
+        300
+      ],
+      "destination_box": [
+        440,
+        65,
+        504,
+        300
+      ]
+    },
+    {
+      "a": "06_blot_original.png",
+      "b": "07_blot_reused_lane.png",
+      "type": "edited_copy"
+    },
+    {
+      "a": "09_plot_original.png",
+      "b": "10_plot_recolored.png",
+      "type": "recolor"
+    }
+  ],
+  "caution": "相同坐标轴、lane 标签、比例尺等公共结构可能相似；检测线索需要人工结合原始数据复核。",
+  "pairwise_ground_truth": [
+    {
+      "image_a": "01_microscopy_original.png",
+      "image_b": "02_microscopy_crop_rotated.png",
+      "duplicate": 1,
+      "category": "microscope",
+      "relation": "shared_synthetic_data"
+    },
+    {
+      "image_a": "01_microscopy_original.png",
+      "image_b": "03_microscopy_mirrored.png",
+      "duplicate": 1,
+      "category": "microscope",
+      "relation": "shared_synthetic_data"
+    },
+    {
+      "image_a": "01_microscopy_original.png",
+      "image_b": "04_microscopy_copy_move.png",
+      "duplicate": 1,
+      "category": "microscope",
+      "relation": "shared_synthetic_data"
+    },
+    {
+      "image_a": "01_microscopy_original.png",
+      "image_b": "05_microscopy_independent.png",
+      "duplicate": 0,
+      "category": "microscope",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "01_microscopy_original.png",
+      "image_b": "06_blot_original.png",
+      "duplicate": 0,
+      "category": "mixed",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "01_microscopy_original.png",
+      "image_b": "07_blot_reused_lane.png",
+      "duplicate": 0,
+      "category": "mixed",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "01_microscopy_original.png",
+      "image_b": "08_blot_independent.png",
+      "duplicate": 0,
+      "category": "mixed",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "01_microscopy_original.png",
+      "image_b": "09_plot_original.png",
+      "duplicate": 0,
+      "category": "mixed",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "01_microscopy_original.png",
+      "image_b": "10_plot_recolored.png",
+      "duplicate": 0,
+      "category": "mixed",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "01_microscopy_original.png",
+      "image_b": "11_plot_independent.png",
+      "duplicate": 0,
+      "category": "mixed",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "02_microscopy_crop_rotated.png",
+      "image_b": "03_microscopy_mirrored.png",
+      "duplicate": 1,
+      "category": "microscope",
+      "relation": "shared_synthetic_data"
+    },
+    {
+      "image_a": "02_microscopy_crop_rotated.png",
+      "image_b": "04_microscopy_copy_move.png",
+      "duplicate": 1,
+      "category": "microscope",
+      "relation": "shared_synthetic_data"
+    },
+    {
+      "image_a": "02_microscopy_crop_rotated.png",
+      "image_b": "05_microscopy_independent.png",
+      "duplicate": 0,
+      "category": "microscope",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "02_microscopy_crop_rotated.png",
+      "image_b": "06_blot_original.png",
+      "duplicate": 0,
+      "category": "mixed",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "02_microscopy_crop_rotated.png",
+      "image_b": "07_blot_reused_lane.png",
+      "duplicate": 0,
+      "category": "mixed",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "02_microscopy_crop_rotated.png",
+      "image_b": "08_blot_independent.png",
+      "duplicate": 0,
+      "category": "mixed",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "02_microscopy_crop_rotated.png",
+      "image_b": "09_plot_original.png",
+      "duplicate": 0,
+      "category": "mixed",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "02_microscopy_crop_rotated.png",
+      "image_b": "10_plot_recolored.png",
+      "duplicate": 0,
+      "category": "mixed",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "02_microscopy_crop_rotated.png",
+      "image_b": "11_plot_independent.png",
+      "duplicate": 0,
+      "category": "mixed",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "03_microscopy_mirrored.png",
+      "image_b": "04_microscopy_copy_move.png",
+      "duplicate": 1,
+      "category": "microscope",
+      "relation": "shared_synthetic_data"
+    },
+    {
+      "image_a": "03_microscopy_mirrored.png",
+      "image_b": "05_microscopy_independent.png",
+      "duplicate": 0,
+      "category": "microscope",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "03_microscopy_mirrored.png",
+      "image_b": "06_blot_original.png",
+      "duplicate": 0,
+      "category": "mixed",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "03_microscopy_mirrored.png",
+      "image_b": "07_blot_reused_lane.png",
+      "duplicate": 0,
+      "category": "mixed",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "03_microscopy_mirrored.png",
+      "image_b": "08_blot_independent.png",
+      "duplicate": 0,
+      "category": "mixed",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "03_microscopy_mirrored.png",
+      "image_b": "09_plot_original.png",
+      "duplicate": 0,
+      "category": "mixed",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "03_microscopy_mirrored.png",
+      "image_b": "10_plot_recolored.png",
+      "duplicate": 0,
+      "category": "mixed",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "03_microscopy_mirrored.png",
+      "image_b": "11_plot_independent.png",
+      "duplicate": 0,
+      "category": "mixed",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "04_microscopy_copy_move.png",
+      "image_b": "05_microscopy_independent.png",
+      "duplicate": 0,
+      "category": "microscope",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "04_microscopy_copy_move.png",
+      "image_b": "06_blot_original.png",
+      "duplicate": 0,
+      "category": "mixed",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "04_microscopy_copy_move.png",
+      "image_b": "07_blot_reused_lane.png",
+      "duplicate": 0,
+      "category": "mixed",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "04_microscopy_copy_move.png",
+      "image_b": "08_blot_independent.png",
+      "duplicate": 0,
+      "category": "mixed",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "04_microscopy_copy_move.png",
+      "image_b": "09_plot_original.png",
+      "duplicate": 0,
+      "category": "mixed",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "04_microscopy_copy_move.png",
+      "image_b": "10_plot_recolored.png",
+      "duplicate": 0,
+      "category": "mixed",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "04_microscopy_copy_move.png",
+      "image_b": "11_plot_independent.png",
+      "duplicate": 0,
+      "category": "mixed",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "05_microscopy_independent.png",
+      "image_b": "06_blot_original.png",
+      "duplicate": 0,
+      "category": "mixed",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "05_microscopy_independent.png",
+      "image_b": "07_blot_reused_lane.png",
+      "duplicate": 0,
+      "category": "mixed",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "05_microscopy_independent.png",
+      "image_b": "08_blot_independent.png",
+      "duplicate": 0,
+      "category": "mixed",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "05_microscopy_independent.png",
+      "image_b": "09_plot_original.png",
+      "duplicate": 0,
+      "category": "mixed",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "05_microscopy_independent.png",
+      "image_b": "10_plot_recolored.png",
+      "duplicate": 0,
+      "category": "mixed",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "05_microscopy_independent.png",
+      "image_b": "11_plot_independent.png",
+      "duplicate": 0,
+      "category": "mixed",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "06_blot_original.png",
+      "image_b": "07_blot_reused_lane.png",
+      "duplicate": 1,
+      "category": "blot",
+      "relation": "shared_synthetic_data"
+    },
+    {
+      "image_a": "06_blot_original.png",
+      "image_b": "08_blot_independent.png",
+      "duplicate": 0,
+      "category": "blot",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "06_blot_original.png",
+      "image_b": "09_plot_original.png",
+      "duplicate": 0,
+      "category": "mixed",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "06_blot_original.png",
+      "image_b": "10_plot_recolored.png",
+      "duplicate": 0,
+      "category": "mixed",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "06_blot_original.png",
+      "image_b": "11_plot_independent.png",
+      "duplicate": 0,
+      "category": "mixed",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "07_blot_reused_lane.png",
+      "image_b": "08_blot_independent.png",
+      "duplicate": 0,
+      "category": "blot",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "07_blot_reused_lane.png",
+      "image_b": "09_plot_original.png",
+      "duplicate": 0,
+      "category": "mixed",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "07_blot_reused_lane.png",
+      "image_b": "10_plot_recolored.png",
+      "duplicate": 0,
+      "category": "mixed",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "07_blot_reused_lane.png",
+      "image_b": "11_plot_independent.png",
+      "duplicate": 0,
+      "category": "mixed",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "08_blot_independent.png",
+      "image_b": "09_plot_original.png",
+      "duplicate": 0,
+      "category": "mixed",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "08_blot_independent.png",
+      "image_b": "10_plot_recolored.png",
+      "duplicate": 0,
+      "category": "mixed",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "08_blot_independent.png",
+      "image_b": "11_plot_independent.png",
+      "duplicate": 0,
+      "category": "mixed",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "09_plot_original.png",
+      "image_b": "10_plot_recolored.png",
+      "duplicate": 1,
+      "category": "chart",
+      "relation": "shared_synthetic_data"
+    },
+    {
+      "image_a": "09_plot_original.png",
+      "image_b": "11_plot_independent.png",
+      "duplicate": 0,
+      "category": "chart",
+      "relation": "independent_synthetic_data"
+    },
+    {
+      "image_a": "10_plot_recolored.png",
+      "image_b": "11_plot_independent.png",
+      "duplicate": 0,
+      "category": "chart",
+      "relation": "independent_synthetic_data"
+    }
+  ],
+  "internal_ground_truth": [
+    {
+      "file": "01_microscopy_original.png",
+      "label": 0
+    },
+    {
+      "file": "02_microscopy_crop_rotated.png",
+      "label": 0
+    },
+    {
+      "file": "03_microscopy_mirrored.png",
+      "label": 0
+    },
+    {
+      "file": "04_microscopy_copy_move.png",
+      "label": 1
+    },
+    {
+      "file": "05_microscopy_independent.png",
+      "label": 0
+    },
+    {
+      "file": "06_blot_original.png",
+      "label": 0
+    },
+    {
+      "file": "07_blot_reused_lane.png",
+      "label": 1
+    },
+    {
+      "file": "08_blot_independent.png",
+      "label": 0
+    },
+    {
+      "file": "09_plot_original.png",
+      "label": 0
+    },
+    {
+      "file": "10_plot_recolored.png",
+      "label": 0
+    },
+    {
+      "file": "11_plot_independent.png",
+      "label": 0
+    }
+  ]
+}

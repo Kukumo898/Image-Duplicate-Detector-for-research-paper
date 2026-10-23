@@ -1,0 +1,7 @@
+{
+  "name": "lab-image-review-ui-checks",
+  "private": true,
+  "description": "Optional development-only browser smoke tests; production UI has no JS dependencies.",
+  "scripts": {"test:ui": "node tests/browser_smoke.cjs"},
+  "devDependencies": {"playwright": "^1.56.0"}
+}

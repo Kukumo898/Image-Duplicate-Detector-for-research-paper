@@ -1,0 +1,819 @@
+{
+  "schema": "reviewed-source-inputs-v1",
+  "date": "2026-10-23",
+  "unchanged_source_files": [
+    {
+      "source": "app/__init__.py",
+      "destination": "app/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Runtime source/static assets or independently reproducible synthetic demo; frozen app preserves original startup gate."
+    },
+    {
+      "source": "app/annotations.py",
+      "destination": "app/annotations.py",
+      "bytes": 16665,
+      "sha256": "a0e66107050725d4019781f2cd6c99e7cc3a16042f7fc6ce7c081f6efe78cde5",
+      "reason": "Runtime source/static assets or independently reproducible synthetic demo; frozen app preserves original startup gate."
+    },
+    {
+      "source": "app/blot_candidates.py",
+      "destination": "app/blot_candidates.py",
+      "bytes": 11957,
+      "sha256": "46e2a75261cee105bbb0c0d364bf073b2794712d6bf6580a10078f5a49e6436a",
+      "reason": "Runtime source/static assets or independently reproducible synthetic demo; frozen app preserves original startup gate."
+    },
+    {
+      "source": "app/engine.py",
+      "destination": "app/engine.py",
+      "bytes": 87711,
+      "sha256": "e516f9b1a81b4a0e138e0af11ad9464d92504dc977ae79516410228aae19a0ba",
+      "reason": "Runtime source/static assets or independently reproducible synthetic demo; frozen app preserves original startup gate."
+    },
+    {
+      "source": "app/ingest.py",
+      "destination": "app/ingest.py",
+      "bytes": 19102,
+      "sha256": "c4c159f8cf5cd4c1bd32465178873a66e2780f22acdf4a24097ee653a2fde5f0",
+      "reason": "Runtime source/static assets or independently reproducible synthetic demo; frozen app preserves original startup gate."
+    },
+    {
+      "source": "app/main.py",
+      "destination": "app/main.py",
+      "bytes": 56641,
+      "sha256": "462dc09d835534dd7db0833d273be3d36345731c2edfbf83962ed3d3d9656897",
+      "reason": "Runtime source/static assets or independently reproducible synthetic demo; frozen app preserves original startup gate."
+    },
+    {
+      "source": "app/panels.py",
+      "destination": "app/panels.py",
+      "bytes": 12877,
+      "sha256": "f311de563143329b5572ddcd3da732480bf847d64d7614b8e1c0e2bc06a66a37",
+      "reason": "Runtime source/static assets or independently reproducible synthetic demo; frozen app preserves original startup gate."
+    },
+    {
+      "source": "app/semantics.py",
+      "destination": "app/semantics.py",
+      "bytes": 4929,
+      "sha256": "9f500cfa69677037a358e79a3633269295c15dc65193b2528ff953b9a307f609",
+      "reason": "Runtime source/static assets or independently reproducible synthetic demo; frozen app preserves original startup gate."
+    },
+    {
+      "source": "app/static/app.css",
+      "destination": "app/static/app.css",
+      "bytes": 34590,
+      "sha256": "736ce01892488c7941a93dab4ab398182d030c4311f8bbb5145dc0816bebd20e",
+      "reason": "Runtime source/static assets or independently reproducible synthetic demo; frozen app preserves original startup gate."
+    },
+    {
+      "source": "app/static/app.js",
+      "destination": "app/static/app.js",
+      "bytes": 45073,
+      "sha256": "5dd7ef9d26b588514f406ae8f4c33d1499d1877186534002a7d8c296a84ad2cf",
+      "reason": "Runtime source/static assets or independently reproducible synthetic demo; frozen app preserves original startup gate."
+    },
+    {
+      "source": "app/static/index.html",
+      "destination": "app/static/index.html",
+      "bytes": 20023,
+      "sha256": "8f12c25774f1ac2d3d262ca653d15e387cc378d75eec1f8e89784ede5e7874ff",
+      "reason": "Runtime source/static assets or independently reproducible synthetic demo; frozen app preserves original startup gate."
+    },
+    {
+      "source": "benchmarks/frozen_v3_before_closeout/app/__init__.py",
+      "destination": "benchmarks/frozen_v3_before_closeout/app/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Runtime source/static assets or independently reproducible synthetic demo; frozen app preserves original startup gate."
+    },
+    {
+      "source": "benchmarks/frozen_v3_before_closeout/app/annotations.py",
+      "destination": "benchmarks/frozen_v3_before_closeout/app/annotations.py",
+      "bytes": 15474,
+      "sha256": "cf32cd8ff1911c6f4a17749b15353a95c453237f8ef904198bf4f28e4ae2832e",
+      "reason": "Runtime source/static assets or independently reproducible synthetic demo; frozen app preserves original startup gate."
+    },
+    {
+      "source": "benchmarks/frozen_v3_before_closeout/app/engine.py",
+      "destination": "benchmarks/frozen_v3_before_closeout/app/engine.py",
+      "bytes": 58848,
+      "sha256": "63dd76a1dcef292eef9a6d03ef5377624b8ed869bd2adb2a0cbd88274b817268",
+      "reason": "Runtime source/static assets or independently reproducible synthetic demo; frozen app preserves original startup gate."
+    },
+    {
+      "source": "benchmarks/frozen_v3_before_closeout/app/ingest.py",
+      "destination": "benchmarks/frozen_v3_before_closeout/app/ingest.py",
+      "bytes": 19102,
+      "sha256": "c4c159f8cf5cd4c1bd32465178873a66e2780f22acdf4a24097ee653a2fde5f0",
+      "reason": "Runtime source/static assets or independently reproducible synthetic demo; frozen app preserves original startup gate."
+    },
+    {
+      "source": "benchmarks/frozen_v3_before_closeout/app/main.py",
+      "destination": "benchmarks/frozen_v3_before_closeout/app/main.py",
+      "bytes": 53676,
+      "sha256": "584bb996e3bb4598d096154989e7a8babdb22f88551acbecf9f07eb46aa439ac",
+      "reason": "Runtime source/static assets or independently reproducible synthetic demo; frozen app preserves original startup gate."
+    },
+    {
+      "source": "benchmarks/frozen_v3_before_closeout/app/panels.py",
+      "destination": "benchmarks/frozen_v3_before_closeout/app/panels.py",
+      "bytes": 12877,
+      "sha256": "f311de563143329b5572ddcd3da732480bf847d64d7614b8e1c0e2bc06a66a37",
+      "reason": "Runtime source/static assets or independently reproducible synthetic demo; frozen app preserves original startup gate."
+    },
+    {
+      "source": "benchmarks/frozen_v3_before_closeout/app/static/app.css",
+      "destination": "benchmarks/frozen_v3_before_closeout/app/static/app.css",
+      "bytes": 34590,
+      "sha256": "736ce01892488c7941a93dab4ab398182d030c4311f8bbb5145dc0816bebd20e",
+      "reason": "Runtime source/static assets or independently reproducible synthetic demo; frozen app preserves original startup gate."
+    },
+    {
+      "source": "benchmarks/frozen_v3_before_closeout/app/static/app.js",
+      "destination": "benchmarks/frozen_v3_before_closeout/app/static/app.js",
+      "bytes": 42598,
+      "sha256": "7bacddec30acc6bb07507f785461707100c54258964a1742fc44e9a5c374789b",
+      "reason": "Runtime source/static assets or independently reproducible synthetic demo; frozen app preserves original startup gate."
+    },
+    {
+      "source": "benchmarks/frozen_v3_before_closeout/app/static/index.html",
+      "destination": "benchmarks/frozen_v3_before_closeout/app/static/index.html",
+      "bytes": 19815,
+      "sha256": "b88431fa8ed5a8fb5f4f185825e3ccac2cb6712f5e82f27f18197fa33afef8db",
+      "reason": "Runtime source/static assets or independently reproducible synthetic demo; frozen app preserves original startup gate."
+    },
+    {
+      "source": "demo/01_microscopy_original.png",
+      "destination": "demo/01_microscopy_original.png",
+      "bytes": 541986,
+      "sha256": "82f60ca7072d876e5a60837bddf479bd92c82ef9b0841bc3586deb3307d70a96",
+      "reason": "Runtime source/static assets or independently reproducible synthetic demo; frozen app preserves original startup gate."
+    },
+    {
+      "source": "demo/02_microscopy_crop_rotated.png",
+      "destination": "demo/02_microscopy_crop_rotated.png",
+      "bytes": 255403,
+      "sha256": "72a34289a912130c763d8bcd1c1f730d9731db42253ecc2d286c2ec4324ed14c",
+      "reason": "Runtime source/static assets or independently reproducible synthetic demo; frozen app preserves original startup gate."
+    },
+    {
+      "source": "demo/03_microscopy_mirrored.png",
+      "destination": "demo/03_microscopy_mirrored.png",
+      "bytes": 541857,
+      "sha256": "818b9c19056f7f441b06a25e29f0c13253a0a2f633b97d7354d4d736fd6f7156",
+      "reason": "Runtime source/static assets or independently reproducible synthetic demo; frozen app preserves original startup gate."
+    },
+    {
+      "source": "demo/04_microscopy_copy_move.png",
+      "destination": "demo/04_microscopy_copy_move.png",
+      "bytes": 541809,
+      "sha256": "fc325cbdb59c1c0a6e14d9c3f80990bf7d01a467aba226b1d684671c9e7e9ae3",
+      "reason": "Runtime source/static assets or independently reproducible synthetic demo; frozen app preserves original startup gate."
+    },
+    {
+      "source": "demo/05_microscopy_independent.png",
+      "destination": "demo/05_microscopy_independent.png",
+      "bytes": 542790,
+      "sha256": "68e8cf991d298ae0665889c9ccced9564a54fe65e469385eaeefec3a80549490",
+      "reason": "Runtime source/static assets or independently reproducible synthetic demo; frozen app preserves original startup gate."
+    },
+    {
+      "source": "demo/06_blot_original.png",
+      "destination": "demo/06_blot_original.png",
+      "bytes": 187641,
+      "sha256": "26f676bc4fb04eeda006895eb1263a21594b40b41fce988fc9372f674627d8bc",
+      "reason": "Runtime source/static assets or independently reproducible synthetic demo; frozen app preserves original startup gate."
+    },
+    {
+      "source": "demo/07_blot_reused_lane.png",
+      "destination": "demo/07_blot_reused_lane.png",
+      "bytes": 178242,
+      "sha256": "71a949faf20e53738011be14bf98e1bf0e4da20f8c8f4436fd366b6f42a735c6",
+      "reason": "Runtime source/static assets or independently reproducible synthetic demo; frozen app preserves original startup gate."
+    },
+    {
+      "source": "demo/08_blot_independent.png",
+      "destination": "demo/08_blot_independent.png",
+      "bytes": 187372,
+      "sha256": "b70e9ba74909880777c83fe9c529e883c44c76c7b3969653193914ac2d58bfb7",
+      "reason": "Runtime source/static assets or independently reproducible synthetic demo; frozen app preserves original startup gate."
+    },
+    {
+      "source": "demo/09_plot_original.png",
+      "destination": "demo/09_plot_original.png",
+      "bytes": 17220,
+      "sha256": "cdd7cd24a923c5e86e8d61550745b33a761813be4a08ca52a1f7f42f9485d065",
+      "reason": "Runtime source/static assets or independently reproducible synthetic demo; frozen app preserves original startup gate."
+    },
+    {
+      "source": "demo/10_plot_recolored.png",
+      "destination": "demo/10_plot_recolored.png",
+      "bytes": 17233,
+      "sha256": "74d7a170d84cbf7c6d8b9e37639da5941db242fade33cddff10ed20a72a3ec9e",
+      "reason": "Runtime source/static assets or independently reproducible synthetic demo; frozen app preserves original startup gate."
+    },
+    {
+      "source": "demo/11_plot_independent.png",
+      "destination": "demo/11_plot_independent.png",
+      "bytes": 16194,
+      "sha256": "57c317212acdd022d9ff3c3412128d601cc90a60fab96dd3f216d75da64f715e",
+      "reason": "Runtime source/static assets or independently reproducible synthetic demo; frozen app preserves original startup gate."
+    },
+    {
+      "source": "demo/ground_truth.csv",
+      "destination": "demo/ground_truth.csv",
+      "bytes": 4825,
+      "sha256": "a5c97304b255beef4db7bf97028d577a13d552ab8793217fd761470f1172ef1e",
+      "reason": "Runtime source/static assets or independently reproducible synthetic demo; frozen app preserves original startup gate."
+    },
+    {
+      "source": "demo/manifest.json",
+      "destination": "demo/manifest.json",
+      "bytes": 15233,
+      "sha256": "d1e0f68a3eb456735d6c25967c258dfd468b1e8bc5ec88b9f911e5c6fe2644c1",
+      "reason": "Runtime source/static assets or independently reproducible synthetic demo; frozen app preserves original startup gate."
+    },
+    {
+      "source": "demo/README.md",
+      "destination": "demo/README.md",
+      "bytes": 747,
+      "sha256": "9947d052cd196a3804d888f21577ad0d16cfcf537bb3476ed1bcee4e9ff1b485",
+      "reason": "Runtime source/static assets or independently reproducible synthetic demo; frozen app preserves original startup gate."
+    },
+    {
+      "source": "tests/test_annotation_integration.py",
+      "destination": "tests/test_annotation_integration.py",
+      "bytes": 10038,
+      "sha256": "817f53c20af22f732c9121d749bb4d7780dc1e5112c5e282b5d3e1d21a9bdd02",
+      "reason": "Existing tests; synthetic fixtures; one optional external-publication fixture excluded."
+    },
+    {
+      "source": "tests/test_annotations.py",
+      "destination": "tests/test_annotations.py",
+      "bytes": 12090,
+      "sha256": "49531a044256bc8eea324ceb19383bc28ce4209aea84b7ac66297fa9c4430c54",
+      "reason": "Existing tests; synthetic fixtures; one optional external-publication fixture excluded."
+    },
+    {
+      "source": "tests/test_api.py",
+      "destination": "tests/test_api.py",
+      "bytes": 6732,
+      "sha256": "7cf1afc90a0cb712fe509a798a4d8b676dace1e3421dd7ef0b9b4f4c54e8117a",
+      "reason": "Existing tests; synthetic fixtures; one optional external-publication fixture excluded."
+    },
+    {
+      "source": "tests/test_blot_low_texture.py",
+      "destination": "tests/test_blot_low_texture.py",
+      "bytes": 4808,
+      "sha256": "2871613c4b8e23c7dade7fbc9d251bc24cad85e643e056545a3a78207632fca6",
+      "reason": "Existing tests; synthetic fixtures; one optional external-publication fixture excluded."
+    },
+    {
+      "source": "tests/test_closeout_semantics.py",
+      "destination": "tests/test_closeout_semantics.py",
+      "bytes": 2341,
+      "sha256": "3441059705e934c1ac839ec2bddb010e5622f5b4528d37b206e426964279274b",
+      "reason": "Existing tests; synthetic fixtures; one optional external-publication fixture excluded."
+    },
+    {
+      "source": "tests/test_document_jobs.py",
+      "destination": "tests/test_document_jobs.py",
+      "bytes": 4440,
+      "sha256": "5c46f1e825780015d580e12f563e508ee7f991d95dc9e9f0814dc21c0e613e98",
+      "reason": "Existing tests; synthetic fixtures; one optional external-publication fixture excluded."
+    },
+    {
+      "source": "tests/test_engine.py",
+      "destination": "tests/test_engine.py",
+      "bytes": 11830,
+      "sha256": "b58c2a894fba6e2a0bc92f1aafbf75207fd5c54d7f4738685f370683d75c921b",
+      "reason": "Existing tests; synthetic fixtures; one optional external-publication fixture excluded."
+    },
+    {
+      "source": "tests/test_engine_annotations.py",
+      "destination": "tests/test_engine_annotations.py",
+      "bytes": 15865,
+      "sha256": "b6a9a410e48e271f0c47ff9e98ddc62a2fbb22726de3a03e7a437dae636d46a5",
+      "reason": "Existing tests; synthetic fixtures; one optional external-publication fixture excluded."
+    },
+    {
+      "source": "tests/test_engine_v2.py",
+      "destination": "tests/test_engine_v2.py",
+      "bytes": 8214,
+      "sha256": "a4051f3ee0313851a9cdc2c2d7ccc64b470ee959061a427079540245cf6e2481",
+      "reason": "Existing tests; synthetic fixtures; one optional external-publication fixture excluded."
+    },
+    {
+      "source": "tests/test_evaluation_classes.py",
+      "destination": "tests/test_evaluation_classes.py",
+      "bytes": 1537,
+      "sha256": "c92081167e7c27404c3c689e0457cf72c4421be7c9731c13d844fe3d61c6d889",
+      "reason": "Existing tests; synthetic fixtures; one optional external-publication fixture excluded."
+    },
+    {
+      "source": "tests/test_ingest.py",
+      "destination": "tests/test_ingest.py",
+      "bytes": 8665,
+      "sha256": "9f01955756b8cd22d03e4bfaa799cae5689fb525c709bc0507661014f068fb58",
+      "reason": "Existing tests; synthetic fixtures; one optional external-publication fixture excluded."
+    },
+    {
+      "source": "tests/test_integration_v2.py",
+      "destination": "tests/test_integration_v2.py",
+      "bytes": 8686,
+      "sha256": "7e558ae0514741c3a7d86fa146962289863c7577ce4bf2509d1a6467b5dafc7c",
+      "reason": "Existing tests; synthetic fixtures; one optional external-publication fixture excluded."
+    },
+    {
+      "source": "tests/test_panels.py",
+      "destination": "tests/test_panels.py",
+      "bytes": 11042,
+      "sha256": "ecab7eb69be9de65c528f562f9c1a3767cc9db080ca8875e52bf3f1868f38e32",
+      "reason": "Existing tests; synthetic fixtures; one optional external-publication fixture excluded."
+    },
+    {
+      "source": "run.py",
+      "destination": "run.py",
+      "bytes": 3503,
+      "sha256": "343f5b89e39ec2b07a074129ecc761126cac6e7a3d4cdacde01da3685f0a6d46",
+      "reason": "Audited original entry point, dependency manifest, or reusable development tool/test."
+    },
+    {
+      "source": "package.json",
+      "destination": "package.json",
+      "bytes": 273,
+      "sha256": "fa2570249cb730ceb8c998567155e55529986e44372f14b0778011b791c5a634",
+      "reason": "Audited original entry point, dependency manifest, or reusable development tool/test."
+    },
+    {
+      "source": "package-lock.json",
+      "destination": "package-lock.json",
+      "bytes": 1170,
+      "sha256": "ce3dffa6d3a4564ada26e7778e0bfd3dc52e94a034890c7f8213130cecd4807a",
+      "reason": "Audited original entry point, dependency manifest, or reusable development tool/test."
+    },
+    {
+      "source": "requirements.txt",
+      "destination": "requirements.txt",
+      "bytes": 144,
+      "sha256": "549fd51b92e483372c5ddcb9d441a1e9247f2bb351f0f6bd3d54c54325f58400",
+      "reason": "Audited original entry point, dependency manifest, or reusable development tool/test."
+    },
+    {
+      "source": "requirements-dev.txt",
+      "destination": "requirements-dev.txt",
+      "bytes": 52,
+      "sha256": "815b46164fb3e965e027d59f06546abd70926d3e5247517fe0cb1a44d5c684fa",
+      "reason": "Audited original entry point, dependency manifest, or reusable development tool/test."
+    },
+    {
+      "source": "requirements-lock.txt",
+      "destination": "requirements-lock.txt",
+      "bytes": 402,
+      "sha256": "407fb6e6bea620e5cf0967440363777bca407d75ca399db0d4a5b5669c2dd70c",
+      "reason": "Audited original entry point, dependency manifest, or reusable development tool/test."
+    },
+    {
+      "source": "requirements-research.txt",
+      "destination": "requirements-research.txt",
+      "bytes": 48,
+      "sha256": "36196850e955173a9a71eaa625ab0426735d10177c784b47737aeab4d4a3d218",
+      "reason": "Audited original entry point, dependency manifest, or reusable development tool/test."
+    },
+    {
+      "source": "pytest.ini",
+      "destination": "pytest.ini",
+      "bytes": 27,
+      "sha256": "c809c969ec7e11b9ff37784e9c6fcc0b7c5148d168e18b05aed797e03fbd6ead",
+      "reason": "Audited original entry point, dependency manifest, or reusable development tool/test."
+    },
+    {
+      "source": "启动系统.bat",
+      "destination": "启动系统.bat",
+      "bytes": 344,
+      "sha256": "a9ca3f9e4bd5b1772f885af7e2e962e99212390de6c220c097de13aaec98287e",
+      "reason": "Audited original entry point, dependency manifest, or reusable development tool/test."
+    },
+    {
+      "source": "停止系统.bat",
+      "destination": "停止系统.bat",
+      "bytes": 230,
+      "sha256": "f7bea0c5aaaae5785e71fea74e9a1fa68cf3fd996a055bf2cdf603705385f703",
+      "reason": "Audited original entry point, dependency manifest, or reusable development tool/test."
+    },
+    {
+      "source": "安装依赖.bat",
+      "destination": "安装依赖.bat",
+      "bytes": 629,
+      "sha256": "3f23eee8136a4f1bc2f44c4db181dbf43a814792cecbee24cfe36332cc1dd02b",
+      "reason": "Audited original entry point, dependency manifest, or reusable development tool/test."
+    },
+    {
+      "source": "scripts/create_demo.py",
+      "destination": "scripts/create_demo.py",
+      "bytes": 10413,
+      "sha256": "be6e79726a82455c8f8efc0bff9ada1cd7394a12e137492fb0bfd5698dfb337f",
+      "reason": "Audited original entry point, dependency manifest, or reusable development tool/test."
+    },
+    {
+      "source": "scripts/evaluate.py",
+      "destination": "scripts/evaluate.py",
+      "bytes": 8848,
+      "sha256": "c8238faf333a0aac54776bcff6d8d7e7dd022da1de6bc19dbc845913c5ef57da",
+      "reason": "Audited original entry point, dependency manifest, or reusable development tool/test."
+    },
+    {
+      "source": "scripts/inspect_panels.py",
+      "destination": "scripts/inspect_panels.py",
+      "bytes": 2842,
+      "sha256": "bcb44cf0fa56de4ea2d2dad0a7be144772583289f040b82a1b95e61b1b94ecd0",
+      "reason": "Audited original entry point, dependency manifest, or reusable development tool/test."
+    },
+    {
+      "source": "scripts/stop_server.ps1",
+      "destination": "scripts/stop_server.ps1",
+      "bytes": 1060,
+      "sha256": "f2e0af6b48fa4492f0b28646228c0b4e83b1ac556248693e2bb61fe8f8a9e082",
+      "reason": "Audited original entry point, dependency manifest, or reusable development tool/test."
+    },
+    {
+      "source": "tests/browser_smoke.cjs",
+      "destination": "tests/browser_smoke.cjs",
+      "bytes": 3443,
+      "sha256": "405577bf64ef7d4ba1a4760ab5670fad54d8bd285096711a498041a1799f3564",
+      "reason": "Audited original entry point, dependency manifest, or reusable development tool/test."
+    },
+    {
+      "source": "output/final_delivery/dist/图片查重系统/程序文件/release_source/app/annotations.py",
+      "destination": "windows/portable/release_source/app/annotations.py",
+      "bytes": 16665,
+      "sha256": "a0e66107050725d4019781f2cd6c99e7cc3a16042f7fc6ce7c081f6efe78cde5",
+      "reason": "Original final Windows release source; no decompilation; preserve byte-for-byte"
+    },
+    {
+      "source": "output/final_delivery/dist/图片查重系统/程序文件/release_source/app/blot_candidates.py",
+      "destination": "windows/portable/release_source/app/blot_candidates.py",
+      "bytes": 11957,
+      "sha256": "46e2a75261cee105bbb0c0d364bf073b2794712d6bf6580a10078f5a49e6436a",
+      "reason": "Original final Windows release source; no decompilation; preserve byte-for-byte"
+    },
+    {
+      "source": "output/final_delivery/dist/图片查重系统/程序文件/release_source/app/cache_root.py",
+      "destination": "windows/portable/release_source/app/cache_root.py",
+      "bytes": 14459,
+      "sha256": "f04e4a25696cf1f86ad174aef50c2caeadd3a1174cf7b02692cffb11539b89e8",
+      "reason": "Original final Windows release source; no decompilation; preserve byte-for-byte"
+    },
+    {
+      "source": "output/final_delivery/dist/图片查重系统/程序文件/release_source/app/daily_lifecycle.py",
+      "destination": "windows/portable/release_source/app/daily_lifecycle.py",
+      "bytes": 5150,
+      "sha256": "6f45abc09e4623657fb6a84bafcd2f28df801d0f381a3de3be47e170dc8a99ad",
+      "reason": "Original final Windows release source; no decompilation; preserve byte-for-byte"
+    },
+    {
+      "source": "output/final_delivery/dist/图片查重系统/程序文件/release_source/app/engine.py",
+      "destination": "windows/portable/release_source/app/engine.py",
+      "bytes": 87711,
+      "sha256": "e516f9b1a81b4a0e138e0af11ad9464d92504dc977ae79516410228aae19a0ba",
+      "reason": "Original final Windows release source; no decompilation; preserve byte-for-byte"
+    },
+    {
+      "source": "output/final_delivery/dist/图片查重系统/程序文件/release_source/app/feature_cache.py",
+      "destination": "windows/portable/release_source/app/feature_cache.py",
+      "bytes": 45535,
+      "sha256": "90a6acc1ea9a3fcf2da2c639dea451293160ffd8728da499367b1d23dc7fdddb",
+      "reason": "Original final Windows release source; no decompilation; preserve byte-for-byte"
+    },
+    {
+      "source": "output/final_delivery/dist/图片查重系统/程序文件/release_source/app/ingest.py",
+      "destination": "windows/portable/release_source/app/ingest.py",
+      "bytes": 19102,
+      "sha256": "c4c159f8cf5cd4c1bd32465178873a66e2780f22acdf4a24097ee653a2fde5f0",
+      "reason": "Original final Windows release source; no decompilation; preserve byte-for-byte"
+    },
+    {
+      "source": "output/final_delivery/dist/图片查重系统/程序文件/release_source/app/main.py",
+      "destination": "windows/portable/release_source/app/main.py",
+      "bytes": 72935,
+      "sha256": "3ad0953843b58288e496012859e501e679ff3ce0c5209419bad6105c08180d10",
+      "reason": "Original final Windows release source; no decompilation; preserve byte-for-byte"
+    },
+    {
+      "source": "output/final_delivery/dist/图片查重系统/程序文件/release_source/app/panels.py",
+      "destination": "windows/portable/release_source/app/panels.py",
+      "bytes": 12877,
+      "sha256": "f311de563143329b5572ddcd3da732480bf847d64d7614b8e1c0e2bc06a66a37",
+      "reason": "Original final Windows release source; no decompilation; preserve byte-for-byte"
+    },
+    {
+      "source": "output/final_delivery/dist/图片查重系统/程序文件/release_source/app/report_assets.py",
+      "destination": "windows/portable/release_source/app/report_assets.py",
+      "bytes": 4435,
+      "sha256": "615cdce982e3993540f74b51aeaf0ae2fc2c9917f5d0bbbea8ce7f7c931b596f",
+      "reason": "Original final Windows release source; no decompilation; preserve byte-for-byte"
+    },
+    {
+      "source": "output/final_delivery/dist/图片查重系统/程序文件/release_source/app/semantics.py",
+      "destination": "windows/portable/release_source/app/semantics.py",
+      "bytes": 4929,
+      "sha256": "9f500cfa69677037a358e79a3633269295c15dc65193b2528ff953b9a307f609",
+      "reason": "Original final Windows release source; no decompilation; preserve byte-for-byte"
+    },
+    {
+      "source": "output/final_delivery/dist/图片查重系统/程序文件/release_source/app/__init__.py",
+      "destination": "windows/portable/release_source/app/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Original final Windows release source; no decompilation; preserve byte-for-byte"
+    },
+    {
+      "source": "output/final_delivery/dist/图片查重系统/程序文件/release_source/app/static/app.css",
+      "destination": "windows/portable/release_source/app/static/app.css",
+      "bytes": 41720,
+      "sha256": "97aac2450d38c3ecb75f4b4f8c0d80b2fca5eb5f8f209419f57cbdff9da23ea6",
+      "reason": "Original final Windows release source; no decompilation; preserve byte-for-byte"
+    },
+    {
+      "source": "output/final_delivery/dist/图片查重系统/程序文件/release_source/app/static/app.js",
+      "destination": "windows/portable/release_source/app/static/app.js",
+      "bytes": 62194,
+      "sha256": "0002ae475cef6e6629d1ee48ccaf492cfb7a64d6826560aed573ae5b1cff5d86",
+      "reason": "Original final Windows release source; no decompilation; preserve byte-for-byte"
+    },
+    {
+      "source": "output/final_delivery/dist/图片查重系统/程序文件/release_source/app/static/index.html",
+      "destination": "windows/portable/release_source/app/static/index.html",
+      "bytes": 22745,
+      "sha256": "0df71e57fb61f03f08389aba8c437106ca6f8d35edb684b99b910c062f790ad9",
+      "reason": "Original final Windows release source; no decompilation; preserve byte-for-byte"
+    },
+    {
+      "source": "output/final_delivery/dist/图片查重系统/程序文件/tools/daily_backup.py",
+      "destination": "windows/portable/tools/daily_backup.py",
+      "bytes": 24181,
+      "sha256": "5ec9153529d0ac8baae71bb085ee51c77b3dfe602f47980db3c47165d5bb304b",
+      "reason": "Original final Windows release source; no decompilation; preserve byte-for-byte"
+    },
+    {
+      "source": "output/final_delivery/dist/图片查重系统/程序文件/tools/daily_common.py",
+      "destination": "windows/portable/tools/daily_common.py",
+      "bytes": 7543,
+      "sha256": "010768d436c84aede793a94394ec13cf81a395d3e7d422c296d92b366b685f38",
+      "reason": "Original final Windows release source; no decompilation; preserve byte-for-byte"
+    },
+    {
+      "source": "output/final_delivery/dist/图片查重系统/程序文件/tools/daily_launcher.py",
+      "destination": "windows/portable/tools/daily_launcher.py",
+      "bytes": 10486,
+      "sha256": "d65e1637453a79e9266fcb39fbcc545fade7992471d3e9db1d4b53e19c23d36a",
+      "reason": "Original final Windows release source; no decompilation; preserve byte-for-byte"
+    },
+    {
+      "source": "output/final_delivery/dist/图片查重系统/程序文件/tools/daily_server.py",
+      "destination": "windows/portable/tools/daily_server.py",
+      "bytes": 2546,
+      "sha256": "5aa2877dbadf4b550e9eb326591f906b3599f89fff83f802b70fdddf34806e62",
+      "reason": "Original final Windows release source; no decompilation; preserve byte-for-byte"
+    },
+    {
+      "source": "output/final_delivery/dist/图片查重系统/程序文件/tools/Inspect-Process.ps1",
+      "destination": "windows/portable/tools/Inspect-Process.ps1",
+      "bytes": 287,
+      "sha256": "016c4188fee4daf9b50a74209edf2ea864f549d009099810ed7380c6c2d51aa2",
+      "reason": "Original final Windows release source; no decompilation; preserve byte-for-byte"
+    },
+    {
+      "source": "output/final_delivery/dist/图片查重系统/程序文件/tools/Launch-Daily.ps1",
+      "destination": "windows/portable/tools/Launch-Daily.ps1",
+      "bytes": 2989,
+      "sha256": "42dfebc2e6359a99bb452e776fbdfe370fc38a558a61d2888fd68a5e8a2e4282",
+      "reason": "Original final Windows release source; no decompilation; preserve byte-for-byte"
+    },
+    {
+      "source": "output/final_delivery/dist/图片查重系统/程序文件/tools/layout_migration.py",
+      "destination": "windows/portable/tools/layout_migration.py",
+      "bytes": 15648,
+      "sha256": "6c9bf5fec0b88f184cb927b4dda41205f2261895efcf03fa79d073d9d7d0f16b",
+      "reason": "Original final Windows release source; no decompilation; preserve byte-for-byte"
+    },
+    {
+      "source": "output/final_delivery/dist/图片查重系统/程序文件/tools/portable_controller.py",
+      "destination": "windows/portable/tools/portable_controller.py",
+      "bytes": 18616,
+      "sha256": "b3299a68cf66384f6ae2f7ec12c2003b71ef6741260164277bf3497d5bed5221",
+      "reason": "Original final Windows release source; no decompilation; preserve byte-for-byte"
+    },
+    {
+      "source": "output/final_delivery/dist/图片查重系统/程序文件/tools/portable_migration.py",
+      "destination": "windows/portable/tools/portable_migration.py",
+      "bytes": 11477,
+      "sha256": "2746113d404057574fb9c40b7df56967b024a762ce4860ad7b2fd90f7a440c91",
+      "reason": "Original final Windows release source; no decompilation; preserve byte-for-byte"
+    },
+    {
+      "source": "output/final_delivery/dist/图片查重系统/程序文件/release_source/requirements-lock.txt",
+      "destination": "windows/portable/release_source/requirements-lock.txt",
+      "bytes": 402,
+      "sha256": "407fb6e6bea620e5cf0967440363777bca407d75ca399db0d4a5b5669c2dd70c",
+      "reason": "Exact packaged dependency lock"
+    },
+    {
+      "source": "output/final_delivery/dist/图片查重系统/程序文件/维护资料/DeliveryEntry.cs",
+      "destination": "windows/build_archive/DeliveryEntry.cs",
+      "bytes": 10867,
+      "sha256": "e1445d0073e99c69f626c8b8500b89c4c7d3d8361215a08415e5883e7b42758b",
+      "reason": "Final original C# / maintenance source; historical build paths retained; build_layout is archival and depends on earlier ZIP"
+    },
+    {
+      "source": "output/final_delivery/dist/图片查重系统/程序文件/维护资料/TujianLauncher.cs",
+      "destination": "windows/build_archive/TujianLauncher.cs",
+      "bytes": 16883,
+      "sha256": "9d86424ff98124ee70216d08d5bc5e800f424ca5bed815ee8f337b706f75b7ed",
+      "reason": "Final original C# / maintenance source; historical build paths retained; build_layout is archival and depends on earlier ZIP"
+    },
+    {
+      "source": "output/final_delivery/dist/图片查重系统/程序文件/维护资料/layout_migration.py",
+      "destination": "windows/build_archive/layout_migration.py",
+      "bytes": 15648,
+      "sha256": "6c9bf5fec0b88f184cb927b4dda41205f2261895efcf03fa79d073d9d7d0f16b",
+      "reason": "Final original C# / maintenance source; historical build paths retained; build_layout is archival and depends on earlier ZIP"
+    },
+    {
+      "source": "output/final_delivery/dist/图片查重系统/程序文件/维护资料/create_demo.py",
+      "destination": "windows/build_archive/create_demo.py",
+      "bytes": 10413,
+      "sha256": "be6e79726a82455c8f8efc0bff9ada1cd7394a12e137492fb0bfd5698dfb337f",
+      "reason": "Final original C# / maintenance source; historical build paths retained; build_layout is archival and depends on earlier ZIP"
+    },
+    {
+      "source": "output/final_delivery/dist/图片查重系统/程序文件/维护资料/generate_original_icon.py",
+      "destination": "windows/build_archive/generate_original_icon.py",
+      "bytes": 3999,
+      "sha256": "eaa05d13a88866487e081aed9c1b1bb27aee0e9c5775288279e92967532719a3",
+      "reason": "Final original C# / maintenance source; historical build paths retained; build_layout is archival and depends on earlier ZIP"
+    },
+    {
+      "source": "output/final_delivery/dist/图片查重系统/程序文件/维护资料/build_layout.py",
+      "destination": "windows/build_archive/build_layout.py",
+      "bytes": 5289,
+      "sha256": "d10ac1e121784951cb888d882b5a2b71b0e3eb3ca0d0194e82b190ccba0e3ce0",
+      "reason": "Final original C# / maintenance source; historical build paths retained; build_layout is archival and depends on earlier ZIP"
+    },
+    {
+      "source": "output/final_delivery/dist/图片查重系统/程序文件/维护资料/维护复现说明.md",
+      "destination": "windows/build_archive/维护复现说明.md",
+      "bytes": 2064,
+      "sha256": "246e163bc843fdf0ab36d185f04c74c7ac4396cd7b0c8793e2409e8894dc34e6",
+      "reason": "Final original C# / maintenance source; historical build paths retained; build_layout is archival and depends on earlier ZIP"
+    },
+    {
+      "source": "output/final_delivery/work/rename_product.py",
+      "destination": "windows/build_archive/rename_product.py",
+      "bytes": 5155,
+      "sha256": "5aee6c250060f3f81c3b7e6b834b931b82fc635377375d70ebc8403e43963bfe",
+      "reason": "Original historical build source; no execution performed; explicit output paths required"
+    },
+    {
+      "source": "output/portable_release/work/runtime/build_runtime.py",
+      "destination": "windows/runtime_build/build_runtime.py",
+      "bytes": 10134,
+      "sha256": "bd486762cc73145709a1568d9d39938594e7e4a9246942cd8c547f88fdbed11e",
+      "reason": "Original historical build source; no execution performed; explicit output paths required"
+    },
+    {
+      "source": "output/portable_release/work/runtime/构建与复现.md",
+      "destination": "windows/runtime_build/ORIGINAL_BUILD_NOTES.zh-CN.md",
+      "bytes": 3334,
+      "sha256": "39c348cf33ca2693baf42dda24fc6da60f196246d460666b8a7f53b979fd94f4",
+      "reason": "Original historical build source; no execution performed; explicit output paths required"
+    },
+    {
+      "source": "output/liquid_glass_icon/work/build_glass_icon.py",
+      "destination": "windows/build_archive/build_glass_icon.py",
+      "bytes": 2192,
+      "sha256": "8952350a80026ff524d73049c263cd50cab212677e08f71ccb100a5801e10dcb",
+      "reason": "Original historical build source; no execution performed; explicit output paths required"
+    },
+    {
+      "source": "output/final_delivery/dist/图片查重系统/程序文件/使用说明.md",
+      "destination": "windows/portable/使用说明.md",
+      "bytes": 4876,
+      "sha256": "5b0d93e4aa8ca5d75e9977ac98fa52889d5eaba22b4d84353561bceacaf4a659",
+      "reason": "Original /api/help resource, generic user manual with no private values; archival portable-binary instructions, not source developer startup"
+    },
+    {
+      "source": "demo/01_microscopy_original.png",
+      "destination": "windows/portable/release_source/demo/01_microscopy_original.png",
+      "bytes": 541986,
+      "sha256": "82f60ca7072d876e5a60837bddf479bd92c82ef9b0841bc3586deb3307d70a96",
+      "reason": "Same audited synthetic demo available to the final Windows source variant."
+    },
+    {
+      "source": "demo/02_microscopy_crop_rotated.png",
+      "destination": "windows/portable/release_source/demo/02_microscopy_crop_rotated.png",
+      "bytes": 255403,
+      "sha256": "72a34289a912130c763d8bcd1c1f730d9731db42253ecc2d286c2ec4324ed14c",
+      "reason": "Same audited synthetic demo available to the final Windows source variant."
+    },
+    {
+      "source": "demo/03_microscopy_mirrored.png",
+      "destination": "windows/portable/release_source/demo/03_microscopy_mirrored.png",
+      "bytes": 541857,
+      "sha256": "818b9c19056f7f441b06a25e29f0c13253a0a2f633b97d7354d4d736fd6f7156",
+      "reason": "Same audited synthetic demo available to the final Windows source variant."
+    },
+    {
+      "source": "demo/04_microscopy_copy_move.png",
+      "destination": "windows/portable/release_source/demo/04_microscopy_copy_move.png",
+      "bytes": 541809,
+      "sha256": "fc325cbdb59c1c0a6e14d9c3f80990bf7d01a467aba226b1d684671c9e7e9ae3",
+      "reason": "Same audited synthetic demo available to the final Windows source variant."
+    },
+    {
+      "source": "demo/05_microscopy_independent.png",
+      "destination": "windows/portable/release_source/demo/05_microscopy_independent.png",
+      "bytes": 542790,
+      "sha256": "68e8cf991d298ae0665889c9ccced9564a54fe65e469385eaeefec3a80549490",
+      "reason": "Same audited synthetic demo available to the final Windows source variant."
+    },
+    {
+      "source": "demo/06_blot_original.png",
+      "destination": "windows/portable/release_source/demo/06_blot_original.png",
+      "bytes": 187641,
+      "sha256": "26f676bc4fb04eeda006895eb1263a21594b40b41fce988fc9372f674627d8bc",
+      "reason": "Same audited synthetic demo available to the final Windows source variant."
+    },
+    {
+      "source": "demo/07_blot_reused_lane.png",
+      "destination": "windows/portable/release_source/demo/07_blot_reused_lane.png",
+      "bytes": 178242,
+      "sha256": "71a949faf20e53738011be14bf98e1bf0e4da20f8c8f4436fd366b6f42a735c6",
+      "reason": "Same audited synthetic demo available to the final Windows source variant."
+    },
+    {
+      "source": "demo/08_blot_independent.png",
+      "destination": "windows/portable/release_source/demo/08_blot_independent.png",
+      "bytes": 187372,
+      "sha256": "b70e9ba74909880777c83fe9c529e883c44c76c7b3969653193914ac2d58bfb7",
+      "reason": "Same audited synthetic demo available to the final Windows source variant."
+    },
+    {
+      "source": "demo/09_plot_original.png",
+      "destination": "windows/portable/release_source/demo/09_plot_original.png",
+      "bytes": 17220,
+      "sha256": "cdd7cd24a923c5e86e8d61550745b33a761813be4a08ca52a1f7f42f9485d065",
+      "reason": "Same audited synthetic demo available to the final Windows source variant."
+    },
+    {
+      "source": "demo/10_plot_recolored.png",
+      "destination": "windows/portable/release_source/demo/10_plot_recolored.png",
+      "bytes": 17233,
+      "sha256": "74d7a170d84cbf7c6d8b9e37639da5941db242fade33cddff10ed20a72a3ec9e",
+      "reason": "Same audited synthetic demo available to the final Windows source variant."
+    },
+    {
+      "source": "demo/11_plot_independent.png",
+      "destination": "windows/portable/release_source/demo/11_plot_independent.png",
+      "bytes": 16194,
+      "sha256": "57c317212acdd022d9ff3c3412128d601cc90a60fab96dd3f216d75da64f715e",
+      "reason": "Same audited synthetic demo available to the final Windows source variant."
+    },
+    {
+      "source": "demo/ground_truth.csv",
+      "destination": "windows/portable/release_source/demo/ground_truth.csv",
+      "bytes": 4825,
+      "sha256": "a5c97304b255beef4db7bf97028d577a13d552ab8793217fd761470f1172ef1e",
+      "reason": "Same audited synthetic demo available to the final Windows source variant."
+    },
+    {
+      "source": "demo/manifest.json",
+      "destination": "windows/portable/release_source/demo/manifest.json",
+      "bytes": 15233,
+      "sha256": "d1e0f68a3eb456735d6c25967c258dfd468b1e8bc5ec88b9f911e5c6fe2644c1",
+      "reason": "Same audited synthetic demo available to the final Windows source variant."
+    },
+    {
+      "source": "demo/README.md",
+      "destination": "windows/portable/release_source/demo/README.md",
+      "bytes": 747,
+      "sha256": "9947d052cd196a3804d888f21577ad0d16cfcf537bb3476ed1bcee4e9ff1b485",
+      "reason": "Same audited synthetic demo available to the final Windows source variant."
+    },
+    {
+      "source": "tests/browser_v2_smoke.cjs",
+      "destination": "tests/browser_v2_smoke.cjs",
+      "bytes": 8155,
+      "sha256": "4b3e7ff1a7a780d882438cf480607b6e8cb7c7156f917526d36a1287b1e00985",
+      "reason": "Optional original Windows browser test; generates synthetic fixtures; requires repo-local virtual environment."
+    },
+    {
+      "source": "output/final_delivery/review/AGPL-3.0-PyMuPDF-COPYING.txt",
+      "destination": "LICENSES/AGPL-3.0-PyMuPDF-COPYING.txt",
+      "bytes": 34520,
+      "sha256": "57c8ff33c9c0cfc3ef00e650a1cc910d7ee479a8bc509f6c9209a7c2a11399d6",
+      "reason": "Verified byte-identical to official PyMuPDF 1.28.2 COPYING; third-party license text, not a grant of MIT relicensing or proof of AGPL compliance."
+    }
+  ],
+  "note": "Project-relative origin paths only. All copied source inputs are byte-identical; generated developer documents and ignore rules are separate. This is not proof of authorship or correspondence to published v1.0.0."
+}
