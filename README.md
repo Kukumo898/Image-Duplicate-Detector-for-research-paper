@@ -30,9 +30,6 @@ Review previous inspection tasks and maintain traceable screening records.
 
 Maintain a local research image library for cross-task image comparison. 
 ---
-## Detection Demonstration
-
-### Example: local reused content detection
 
 ## Detection Demonstration
 
