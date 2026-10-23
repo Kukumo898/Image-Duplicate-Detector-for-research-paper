@@ -34,9 +34,23 @@ Maintain a local research image library for cross-task image comparison.
 
 ### Example: local reused content detection
 
-![Detection Result](screenshot-detection-result.png)
+## Detection Demonstration
 
-This example demonstrates the software's ability to identify locally reused scientific image content.
+### Example: Detection of Transformed and Reused Image Regions
+
+**Original and modified images**
+
+![Compared Scientific Images](image.png)
+
+**Automated detection results**
+
+![Detection Result](1.png)
+
+A very small region from the original histological image was cropped, inverted, and stretched before being inserted into another image.
+
+Despite these transformations, the software successfully identified the locally reused image region and highlighted the corresponding matching areas.
+
+This example demonstrates the potential of the system for detecting localized image reuse in scientific figures, including content that has undergone geometric transformations. 
 
 A very small region from the left image was cropped, inverted, and stretched before being inserted into the right image. The system was still able to detect the local similarity and highlight the corresponding evidence regions.
 
