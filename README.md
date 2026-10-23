@@ -1,6 +1,5 @@
 # Image-Duplicate-Detector-for-research-paper
 A tool for detecting duplicate and visually similar images in scientific manuscripts, supporting image integrity checks and quality control during research paper preparation and publication.
-# Image Duplicate Detector for Research Papers
 
 **A Windows desktop tool for detecting duplicate and visually similar images in scientific research.**
 
@@ -31,7 +30,17 @@ Review previous inspection tasks and maintain traceable screening records.
 
 Maintain a local research image library for cross-task image comparison. 
 ---
+## Detection Demonstration
 
+### Example: local reused content detection
+
+![Detection Result](screenshot-detection-result.png)
+
+This example demonstrates the software's ability to identify locally reused scientific image content.
+
+A very small region from the left image was cropped, inverted, and stretched before being inserted into the right image. The system was still able to detect the local similarity and highlight the corresponding evidence regions.
+
+This case illustrates the tool’s usefulness for screening potentially manipulated or reused image content during scientific figure review.
 ## Download
 
 **Latest Release: v1.0.0 | Windows x64**
